@@ -5,6 +5,7 @@ const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 const authRoutes = require('./routes/authRoutes');
 const resumeRoutes = require('./routes/resumeRoutes');
 const jobRoutes = require('./routes/jobRoutes');
+const recommendationRoutes = require('./routes/recommendationRoutes');
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.get('/api/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/resumes', resumeRoutes);
 app.use('/api/jobs', jobRoutes);
+app.use('/api/recommendations', recommendationRoutes);
 // app.use('/api/resumes', resumeRoutes);
 // app.use('/api/jobs', jobRoutes);
 // app.use('/api/recommendations', recommendationRoutes);
