@@ -19,3 +19,4 @@ AI JOB RECOMMENDATION/
 
 ## Authors
 Built with professional engineering practices for technical interviews.
+
