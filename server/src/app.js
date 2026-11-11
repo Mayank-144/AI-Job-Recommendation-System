@@ -6,6 +6,8 @@ const authRoutes = require('./routes/authRoutes');
 const resumeRoutes = require('./routes/resumeRoutes');
 const jobRoutes = require('./routes/jobRoutes');
 const recommendationRoutes = require('./routes/recommendationRoutes');
+const applicationRoutes = require('./routes/applicationRoutes');
+const interactionRoutes = require('./routes/interactionRoutes');
 
 const app = express();
 
@@ -37,6 +39,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/resumes', resumeRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/recommendations', recommendationRoutes);
+app.use('/api/applications', applicationRoutes);
+app.use('/api/interactions', interactionRoutes);
 // app.use('/api/resumes', resumeRoutes);
 // app.use('/api/jobs', jobRoutes);
 // app.use('/api/recommendations', recommendationRoutes);
