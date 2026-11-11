@@ -60,3 +60,4 @@ recommendationSchema.index({ userId: 1, jobId: 1 }, { unique: true });
 
 const Recommendation = mongoose.model('Recommendation', recommendationSchema);
 module.exports = Recommendation;
+

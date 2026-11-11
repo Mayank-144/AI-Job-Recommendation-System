@@ -39,3 +39,4 @@ applicationSchema.index({ userId: 1, jobId: 1 }, { unique: true });
 
 const Application = mongoose.model('Application', applicationSchema);
 module.exports = Application;
+

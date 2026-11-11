@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 
+const authRoutes = require('./routes/authRoutes');
+
 const app = express();
 
 // Enable Cross-Origin Resource Sharing
@@ -27,8 +29,8 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Placeholder for future routes (Auth, Jobs, Resumes, Recommendations)
-// app.use('/api/auth', authRoutes);
+// Mount Routes
+app.use('/api/auth', authRoutes);
 // app.use('/api/resumes', resumeRoutes);
 // app.use('/api/jobs', jobRoutes);
 // app.use('/api/recommendations', recommendationRoutes);
@@ -40,3 +42,4 @@ app.use(notFoundHandler);
 app.use(errorHandler);
 
 module.exports = app;
+

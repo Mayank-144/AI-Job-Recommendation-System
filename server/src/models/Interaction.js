@@ -36,3 +36,4 @@ interactionSchema.index({ userId: 1, jobId: 1, actionType: 1 });
 
 const Interaction = mongoose.model('Interaction', interactionSchema);
 module.exports = Interaction;
+
