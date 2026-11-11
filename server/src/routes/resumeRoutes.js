@@ -13,3 +13,4 @@ router.get('/me', protect, getMyResume);
 router.put('/skills', protect, updateResumeSkills);
 
 module.exports = router;
+

@@ -52,3 +52,4 @@ const uploadResume = multer({
 });
 
 module.exports = uploadResume;
+

@@ -53,3 +53,4 @@ module.exports = {
   validateRegisterInput,
   validateLoginInput,
 };
+
