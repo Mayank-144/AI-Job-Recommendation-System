@@ -3,6 +3,7 @@ const cors = require('cors');
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 
 const authRoutes = require('./routes/authRoutes');
+const resumeRoutes = require('./routes/resumeRoutes');
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.get('/api/health', (req, res) => {
 
 // Mount Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/resumes', resumeRoutes);
 // app.use('/api/resumes', resumeRoutes);
 // app.use('/api/jobs', jobRoutes);
 // app.use('/api/recommendations', recommendationRoutes);
