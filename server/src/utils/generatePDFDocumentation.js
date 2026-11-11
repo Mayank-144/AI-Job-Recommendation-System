@@ -221,3 +221,4 @@ generateDocumentationPDF()
     console.error(`[PDF Error]: ${err.message}`);
     process.exit(1);
   });
+

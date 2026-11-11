@@ -12,3 +12,4 @@ router.get('/my-applications', protect, getMyApplications);
 router.put('/:id/status', protect, authorize('admin'), updateApplicationStatus);
 
 module.exports = router;
+

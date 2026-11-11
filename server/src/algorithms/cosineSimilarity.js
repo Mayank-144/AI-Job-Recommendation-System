@@ -45,3 +45,4 @@ const calculateCosineSimilarity = (vecA, vecB) => {
 module.exports = {
   calculateCosineSimilarity,
 };
+

@@ -52,3 +52,4 @@ const analyzeSkillGap = (
 module.exports = {
   analyzeSkillGap,
 };
+

@@ -41,3 +41,4 @@ const rankJobs = (recommendationList = []) => {
 module.exports = {
   rankJobs,
 };
+

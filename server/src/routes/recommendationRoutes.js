@@ -10,3 +10,4 @@ router.get('/', protect, getRecommendations);
 router.post('/refresh', protect, refreshRecommendations);
 
 module.exports = router;
+

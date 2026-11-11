@@ -10,3 +10,4 @@ router.post('/', protect, recordInteraction);
 router.get('/saved', protect, getSavedJobs);
 
 module.exports = router;
+

@@ -56,3 +56,4 @@ const calculateSkillMatch = (candidateSkills = [], jobSkills = []) => {
 module.exports = {
   calculateSkillMatch,
 };
+
